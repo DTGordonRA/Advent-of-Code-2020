@@ -1,3 +1,6 @@
+import time
+start = time.time()
+
 myMap = open("input.txt", 'r').readlines()
 treeCount = [0,0,0,0,0]
 xIndex = [0,0,0,0,0]
@@ -37,3 +40,6 @@ output = treeCount[0]
 for i in range(1, len(treeCount)):
     output *= treeCount[i]
 print(output)
+
+end = time.time()
+print("Time Elapsed: " + str(end - start))
