@@ -1,4 +1,4 @@
-myMap = open("gabe_input.txt", 'r').readlines()
+myMap = open("input.txt", 'r').readlines()
 treeCount = [0,0,0,0,0]
 xIndex = [0,0,0,0,0]
 slope = [1,3,5,7]
