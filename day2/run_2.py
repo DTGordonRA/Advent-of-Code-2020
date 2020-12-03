@@ -1,7 +1,7 @@
 import time
 start = time.time()
 
-content = open("input1_1.txt", 'r').readlines()
+content = open("input.txt", 'r').readlines()
 output = 0
 
 for line in content:
