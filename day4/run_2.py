@@ -37,7 +37,7 @@ while(loop):
 
 
     if(valid == True):
-        print('===========================================================================================================================')
+        # print('===========================================================================================================================')
         #print(parts)
         #print(parts['byr'])
         #print(parts['iyr'])
@@ -86,20 +86,17 @@ while(loop):
                                 except:
                                     pid_pass = False
                         if(pid_pass):
-                            print('PID Passed')
+                            # print('PID Passed')
                             passport_count += 1
                             # print(str(passport_count) + ': ' + str(parts))
-        print(parts)
-        print('===========================================================================================================================')
+        # print(parts)
+        # print('===========================================================================================================================')
 
     line = passports.readline().strip()
     if(line == ''):
         loop = False
 
-print(passport_count)
-
-print(test_count)
-
+print("Valid Passports: " + str(passport_count))
 
 end = time.time()
 print("Time Elapsed: " + str(end - start))
